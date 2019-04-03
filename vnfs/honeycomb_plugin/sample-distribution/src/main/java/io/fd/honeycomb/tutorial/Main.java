@@ -19,28 +19,11 @@
  */
 
 package io.fd.honeycomb.vpp.integration.distro;
-
-import com.google.common.collect.Lists;
-import com.google.inject.Module;
-import io.fd.hc2vpp.lisp.LispModule;
-import io.fd.hc2vpp.v3po.V3poModule;
-import io.fd.hc2vpp.common.integration.VppCommonModule;
-import io.fd.hc2vpp.vppnsh.impl.VppNshModule;
-import java.util.List;
+import io.fd.honeycomb.infra.distro.activation.ActivationModule;
 
 public class Main {
 
     public static void main(String[] args) {
-        final List<Module> sampleModules = Lists.newArrayList(io.fd.honeycomb.infra.distro.Main.BASE_MODULES);
-
-        // All the plugins should be listed here
-        sampleModules.add(new VppCommonModule());
-        sampleModules.add(new V3poModule());
-        sampleModules.add(new LispModule());
-        sampleModules.add(new VppNshModule());
-        sampleModules.add(new io.fd.honeycomb.tutorial.Module());
-        sampleModules.add(new io.fd.honeycomb.lcmapi.Module());
-
-        io.fd.honeycomb.infra.distro.Main.init(sampleModules);
+        io.fd.honeycomb.infra.distro.Main.init(new ActivationModule());
     }
 }
