@@ -22,10 +22,10 @@ package io.fd.honeycomb.vpp.integration.distro;
 
 import com.google.common.collect.Lists;
 import com.google.inject.Module;
-import io.fd.honeycomb.lisp.LispModule;
-import io.fd.honeycomb.translate.v3po.V3poModule;
-import io.fd.honeycomb.vpp.distro.VppCommonModule;
-import io.fd.honeycomb.vppnsh.impl.VppNshModule;
+import io.fd.hc2vpp.lisp.LispModule;
+import io.fd.hc2vpp.v3po.V3poModule;
+import io.fd.hc2vpp.common.integration.VppCommonModule;
+import io.fd.hc2vpp.vppnsh.impl.VppNshModule;
 import java.util.List;
 
 public class Main {

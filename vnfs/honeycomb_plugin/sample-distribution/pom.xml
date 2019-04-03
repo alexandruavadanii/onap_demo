@@ -19,11 +19,11 @@
 
   <properties>
       <main.class>io.fd.honeycomb.vpp.integration.distro.Main</main.class>
-      <v3po.version>1.16.9</v3po.version>
-      <lisp.version>1.16.9</lisp.version>
-      <vpp.common.min.distro.version>1.16.9</vpp.common.min.distro.version>
-      <vppnsh.version>1.16.9</vppnsh.version>
-      <honeycomb.infra.version>1.16.9</honeycomb.infra.version>
+      <v3po.version>1.19.01</v3po.version>
+      <lisp.version>1.19.01</lisp.version>
+      <vpp.common.min.distro.version>1.19.01</vpp.common.min.distro.version>
+      <vppnsh.version>1.19.01</vppnsh.version>
+      <honeycomb.infra.version>1.19.01</honeycomb.infra.version>
   </properties>
 
   <build>
@@ -68,22 +68,22 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.fd.honeycomb.vpp</groupId>
+      <groupId>io.fd.honeycomb</groupId>
       <artifactId>minimal-distribution</artifactId>
       <version>${vpp.common.min.distro.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.fd.honeycomb.v3po</groupId>
+      <groupId>io.fd.hc2vpp.v3po</groupId>
       <artifactId>v3po2vpp</artifactId>
       <version>${v3po.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.fd.honeycomb.lisp</groupId>
+      <groupId>io.fd.hc2vpp.lisp</groupId>
       <artifactId>lisp2vpp</artifactId>
       <version>${lisp.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.fd.honeycomb.vppnsh</groupId>
+      <groupId>io.fd.hc2vpp.nsh</groupId>
       <artifactId>vppnsh-impl</artifactId>
       <version>${vppnsh.version}</version>
     </dependency>

@@ -24,7 +24,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 import io.fd.honeycomb.data.init.DataTreeInitializer;
 import io.fd.honeycomb.translate.read.ReaderFactory;
-import io.fd.honeycomb.translate.v3po.util.NamingContext;
+import io.fd.hc2vpp.common.translate.util.NamingContext;
 import io.fd.honeycomb.translate.write.WriterFactory;
 import io.fd.honeycomb.tutorial.init.ConfigDataInitializer;
 //import io.fd.honeycomb.tutorial.read.ModuleStateReaderFactory;
